@@ -124,6 +124,16 @@ header a:hover{
     margin-top: 0;
 }
 
+.canvas-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+
 #listo {
     display: flex;
     align-items: center;

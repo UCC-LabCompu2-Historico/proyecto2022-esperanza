@@ -1,0 +1,6 @@
+ENLACES DE IMAGENES
+
+Procesador: "https://i.ibb.co/3WNrkJY/procesador.jpg"
+Windows XP: "https://i.ibb.co/0MJ8XMV/image.png"
+Memoria RAM: "https://i.ibb.co/rkkXk5z/RAM.jpg"
+Windows 10: "https://i.ibb.co/kx0G13x/windows10.jpg"

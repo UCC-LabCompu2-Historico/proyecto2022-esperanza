@@ -7,7 +7,13 @@
     <meta content="html, cabeceras, etiquetas, estilos, parrafos"> 
     <link rel="icon" href="recursos\signo-de-interrogacion.png">
 </head>
+
     <link rel="stylesheet" href="estilos-juego.css">
+    <script defer src="preguntas.js"></script>
+    <script defer src="funciones.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.all.min.js"></script>
 
     
 <body>
@@ -25,30 +31,31 @@
 
             <div class="encabezado">   
 
-                <div class="numero">
+                <div class="numero" id="numero">
                     Pregunta 1
                 </div>
-                <div class="pregunta">
-                    ¿Cuál de los siguientes componentes de PC es el que aparece en la imágen?
+
+                <div class="pregunta" id="pregunta">
+                    ¿PREGUNTA?
                 </div>
 
                 <br>
 
-                <img src="recursos\procesador.jpg" class="imagen">
+                <img id="imagen" class="imagen">
 
                 <br>
 
-                <div class="boton" id="boton1">
-                    Tarjeta Gráfica
+                <div class="boton" id="boton1" onclick="seleccionarOpcion(0)">
+                    Opción 1
                 </div>
-                <div class="boton" id="boton2">
-                    Procesador
+                <div class="boton" id="boton2" onclick="seleccionarOpcion(1)">
+                    Opción 2
                 </div>
-                <div class="boton" id="boton3">
-                    Memoria RAM
+                <div class="boton" id="boton3" onclick="seleccionarOpcion(2)">
+                    Opción 3
                 </div>
-                <div class="boton" id="boton4">
-                    Placa Madre
+                <div class="boton" id="boton4" onclick="seleccionarOpcion(3)">
+                    Opción 4
                 </div>
             
             </div>

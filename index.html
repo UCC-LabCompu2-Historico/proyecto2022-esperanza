@@ -8,7 +8,10 @@
     <link rel="icon" href="recursos\signo-de-interrogacion.png">
 </head>
     <link rel="stylesheet" href="estilos.css">
-<body>
+    <script defer src="funciones.js"></script>
+    <script defer src="preguntas.js"></script>
+    
+<body onload="dibujarSigno()">
     <header>
         <div class="container">
             <p class="logo">PREGUNTADOS</p>
@@ -28,12 +31,10 @@
     </section>
 
     <section id="creador">
-        <div class="img-container">
             <h2>Creador: <br>Ignacio <span class="color-acento">  Esperanza</span></h2>
             <p>Soy alumno de Ingeniería en Computación en la Universidad Católica de Córdoba y cree esta página web como proyecto para la materia de Laboratorio de Computación 2.</p>
-        </div>
     </section>
-
+    
     <section id="como-jugar">
     <div class="container">
         <div class="img-container"></div>
@@ -43,6 +44,12 @@
         </div>
 
     </div>
+    </section>
+
+    <section id="canvas">
+        <div class="canvas-container">
+        <canvas id="myCanvas" class="canv" width="200px" height="200px"></canvas>
+        </div>
     </section>
 
     <section id="listo">
