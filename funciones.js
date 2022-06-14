@@ -60,6 +60,7 @@ async function seleccionarOpcion(index){
       text: `Tu puntaje fue de: ${puntaje}/${preguntas.length}`,
     });
     INDEX_PREGUNTA = 0;
+    n_pregunta = 1;
     puntaje = 0;
   }
   cargarPregunta(INDEX_PREGUNTA);
