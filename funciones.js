@@ -4,6 +4,12 @@ let puntaje = 0;
 
 cargarPregunta(INDEX_PREGUNTA);
 
+/*
+    Esta funcion busca las preguntas y respuestas de la base
+    de datos ubicada en preguntas.js para despues mostrarlas
+    en pantalla correctamente.
+    @method cargarPregunta
+*/
 
 function cargarPregunta(index){
     objetoPregunta = preguntas[index]
@@ -32,6 +38,12 @@ function cargarPregunta(index){
     document.getElementById("boton4").innerHTML = opciones[3]
 }
 
+/*
+    Esta funcion es la que verifica que la respuesta sea
+    correcta o incorrecta para sumar o restar al puntaje del usuario.
+    @method seleccionarOpcion
+*/
+
 async function seleccionarOpcion(index){
     let validezRespuesta = opciones[index] == objetoPregunta.respuesta
     if (validezRespuesta) {
@@ -57,7 +69,7 @@ async function seleccionarOpcion(index){
   if (INDEX_PREGUNTA >= preguntas.length) {
     await Swal.fire({
       title: "Juego terminado",
-      text: `Tu puntaje fue de: ${puntaje}/${preguntas.length}`,
+      text:  `Tu puntaje fue de: ${puntaje}/${preguntas.length}`,
     });
     INDEX_PREGUNTA = 0;
     n_pregunta = 1;
@@ -66,20 +78,22 @@ async function seleccionarOpcion(index){
   cargarPregunta(INDEX_PREGUNTA);
 }
 
-function dibujarSigno() {
-  var canvas = document.getElementById("myCanvas");
-  var ctx = canvas.getContext("2d");
+/*
+    Esta funcion permite ingresar el nombre
+    del usuario para empezar el juego.
+    @method ingresarNombre
+*/
 
-  var yMax = canvas.height;
+function ingresarNombre(){
+   const {value: text} = Swal.fire({
+    title: "Bienvenido!",
+    text: "Ingresa tu nombre para empezar:",
+    icon: "question",
+    confirmButtonText: "Empezar",
 
-  ctx.fillRect(85, yMax-40, 30, 30);
-
-  ctx.fillRect(85, yMax-50, 30, -70);
-
-  ctx.fillRect(110, yMax-120, 50, 30);
-
-  ctx.fillRect(130, yMax-180, 30, 60);
-
-  ctx.fillRect(80, yMax-180, 50, 30);
+    input: "text",
+    inputPlaceholder: "Nombre",
+    inputValue: "",
+  });
 
 }
