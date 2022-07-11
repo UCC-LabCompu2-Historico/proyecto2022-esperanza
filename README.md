@@ -1,7 +1,7 @@
 # Preguntados
 Esta pagina web consiste en un juego en donde se debe responder la mayor cantidad de preguntas correctamente para obtener cada vez un mayor puntaje y conocimiento sobre la informática.
 
-Link al sitio: [Preguntados](https://ucc-labcompu2.github.io/proyecto2022-esperanza/index.html)
+Link al sitio: [Preguntados](https://ucc-labcompu2-Historico.github.io/proyecto2022-esperanza/index.html)
 
 # Autor
 Ignacio Esperanza, alumno de Ingeniería en Computación.
